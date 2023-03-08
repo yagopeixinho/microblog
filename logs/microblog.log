@@ -13,3 +13,85 @@
 2023-03-08 13:50:23,509 INFO: Microblog startup [in /home/yagopeixinho/Desktop/Local/Personal/Github/Repositories/microblog/app/__init__.py:44]
 2023-03-08 13:50:25,646 INFO: Microblog startup [in /home/yagopeixinho/Desktop/Local/Personal/Github/Repositories/microblog/app/__init__.py:44]
 2023-03-08 13:57:35,163 INFO: Microblog startup [in /home/yagopeixinho/Desktop/Local/Personal/Github/Repositories/microblog/app/__init__.py:44]
+2023-03-08 14:03:25,137 INFO: Microblog startup [in /home/yagopeixinho/Desktop/Local/Personal/Github/Repositories/microblog/app/__init__.py:44]
+2023-03-08 14:03:29,818 ERROR: Exception on /index [GET] [in /home/yagopeixinho/.local/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/yagopeixinho/.local/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/yagopeixinho/.local/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/yagopeixinho/.local/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/yagopeixinho/.local/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/yagopeixinho/.local/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/yagopeixinho/Desktop/Local/Personal/Github/Repositories/microblog/app/routes.py", line 23, in index
+    return render_template("index.html", title='Home Page', posts=posts)
+  File "/home/yagopeixinho/.local/lib/python3.10/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/yagopeixinho/.local/lib/python3.10/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/home/yagopeixinho/.local/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/yagopeixinho/.local/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/yagopeixinho/Desktop/Local/Personal/Github/Repositories/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/yagopeixinho/Desktop/Local/Personal/Github/Repositories/microblog/app/templates/base.html", line 32, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/yagopeixinho/Desktop/Local/Personal/Github/Repositories/microblog/app/templates/index.html", line 6, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/home/yagopeixinho/.local/lib/python3.10/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2023-03-08 14:03:30,431 ERROR: Exception on /index [GET] [in /home/yagopeixinho/.local/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/yagopeixinho/.local/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/yagopeixinho/.local/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/yagopeixinho/.local/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/yagopeixinho/.local/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/yagopeixinho/.local/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/yagopeixinho/Desktop/Local/Personal/Github/Repositories/microblog/app/routes.py", line 23, in index
+    return render_template("index.html", title='Home Page', posts=posts)
+  File "/home/yagopeixinho/.local/lib/python3.10/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/yagopeixinho/.local/lib/python3.10/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/home/yagopeixinho/.local/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/yagopeixinho/.local/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/yagopeixinho/Desktop/Local/Personal/Github/Repositories/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/yagopeixinho/Desktop/Local/Personal/Github/Repositories/microblog/app/templates/base.html", line 32, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/yagopeixinho/Desktop/Local/Personal/Github/Repositories/microblog/app/templates/index.html", line 6, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/home/yagopeixinho/.local/lib/python3.10/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2023-03-08 14:06:11,959 INFO: Microblog startup [in /home/yagopeixinho/Desktop/Local/Personal/Github/Repositories/microblog/app/__init__.py:44]
+2023-03-08 14:08:28,877 INFO: Microblog startup [in /home/yagopeixinho/Desktop/Local/Personal/Github/Repositories/microblog/app/__init__.py:44]
+2023-03-08 14:08:31,391 INFO: Microblog startup [in /home/yagopeixinho/Desktop/Local/Personal/Github/Repositories/microblog/app/__init__.py:44]
+2023-03-08 14:14:07,382 INFO: Microblog startup [in /home/yagopeixinho/Desktop/Local/Personal/Github/Repositories/microblog/app/__init__.py:44]
+2023-03-08 14:30:37,058 INFO: Microblog startup [in /home/yagopeixinho/Desktop/Local/Personal/Github/Repositories/microblog/app/__init__.py:44]
+2023-03-08 14:31:04,634 INFO: Microblog startup [in /home/yagopeixinho/Desktop/Local/Personal/Github/Repositories/microblog/app/__init__.py:44]
+2023-03-08 14:32:45,120 INFO: Microblog startup [in /home/yagopeixinho/Desktop/Local/Personal/Github/Repositories/microblog/app/__init__.py:44]
+2023-03-08 14:35:34,892 INFO: Microblog startup [in /home/yagopeixinho/Desktop/Local/Personal/Github/Repositories/microblog/app/__init__.py:44]
+2023-03-08 14:36:25,339 INFO: Microblog startup [in /home/yagopeixinho/Desktop/Local/Personal/Github/Repositories/microblog/app/__init__.py:44]
+2023-03-08 14:36:32,942 INFO: Microblog startup [in /home/yagopeixinho/Desktop/Local/Personal/Github/Repositories/microblog/app/__init__.py:44]
+2023-03-08 14:37:20,373 INFO: Microblog startup [in /home/yagopeixinho/Desktop/Local/Personal/Github/Repositories/microblog/app/__init__.py:44]
+2023-03-08 14:37:20,921 INFO: Microblog startup [in /home/yagopeixinho/Desktop/Local/Personal/Github/Repositories/microblog/app/__init__.py:44]
+2023-03-08 14:39:59,215 INFO: Microblog startup [in /home/yagopeixinho/Desktop/Local/Personal/Github/Repositories/microblog/app/__init__.py:44]
+2023-03-08 14:40:05,845 INFO: Microblog startup [in /home/yagopeixinho/Desktop/Local/Personal/Github/Repositories/microblog/app/__init__.py:44]
+2023-03-08 14:40:09,009 INFO: Microblog startup [in /home/yagopeixinho/Desktop/Local/Personal/Github/Repositories/microblog/app/__init__.py:44]
+2023-03-08 14:40:09,444 INFO: Microblog startup [in /home/yagopeixinho/Desktop/Local/Personal/Github/Repositories/microblog/app/__init__.py:44]
+2023-03-08 14:41:33,428 INFO: Microblog startup [in /home/yagopeixinho/Desktop/Local/Personal/Github/Repositories/microblog/app/__init__.py:44]
+2023-03-08 14:41:38,540 INFO: Microblog startup [in /home/yagopeixinho/Desktop/Local/Personal/Github/Repositories/microblog/app/__init__.py:44]
+2023-03-08 14:41:54,968 INFO: Microblog startup [in /home/yagopeixinho/Desktop/Local/Personal/Github/Repositories/microblog/app/__init__.py:44]
