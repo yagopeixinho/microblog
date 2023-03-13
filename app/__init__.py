@@ -17,6 +17,13 @@ login = LoginManager(app)
 login.login_view = 'login'
 mail = Mail(app)
 
+app.config['MAIL_SERVER']='smtp.gmail.com'
+app.config['MAIL_PORT'] = 465
+app.config['MAIL_USERNAME'] = 'peixinhoyago@gmail.com'
+app.config['MAIL_PASSWORD'] = 'wxwkdpuymaxtmexy'
+app.config['MAIL_USE_TLS'] = False
+app.config['MAIL_USE_SSL'] = True
+
 if not app.debug:
     if app.config['MAIL_SERVER']:
         auth = None

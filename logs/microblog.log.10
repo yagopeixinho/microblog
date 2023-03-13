@@ -1,4 +1,4 @@
-2023-03-08 21:43:16,427 ERROR: Exception on /login [GET] [in /home/yagopeixinho/.local/lib/python3.10/site-packages/flask/app.py:1744]
+2023-03-08 21:44:29,476 ERROR: Exception on /login [GET] [in /home/yagopeixinho/.local/lib/python3.10/site-packages/flask/app.py:1744]
 Traceback (most recent call last):
   File "/home/yagopeixinho/.local/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
     response = self.full_dispatch_request()
@@ -31,7 +31,7 @@ Traceback (most recent call last):
   File "/home/yagopeixinho/.local/lib/python3.10/site-packages/werkzeug/routing/map.py", line 917, in build
     raise BuildError(endpoint, values, method, self)
 werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'reset_password_request'. Did you mean 'edit_profile' instead?
-2023-03-08 21:43:16,872 ERROR: Exception on /login [GET] [in /home/yagopeixinho/.local/lib/python3.10/site-packages/flask/app.py:1744]
+2023-03-08 21:44:29,829 ERROR: Exception on /login [GET] [in /home/yagopeixinho/.local/lib/python3.10/site-packages/flask/app.py:1744]
 Traceback (most recent call last):
   File "/home/yagopeixinho/.local/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
     response = self.full_dispatch_request()
@@ -64,7 +64,7 @@ Traceback (most recent call last):
   File "/home/yagopeixinho/.local/lib/python3.10/site-packages/werkzeug/routing/map.py", line 917, in build
     raise BuildError(endpoint, values, method, self)
 werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'reset_password_request'. Did you mean 'edit_profile' instead?
-2023-03-08 21:43:17,372 ERROR: Exception on /login [GET] [in /home/yagopeixinho/.local/lib/python3.10/site-packages/flask/app.py:1744]
+2023-03-08 21:44:30,232 ERROR: Exception on /login [GET] [in /home/yagopeixinho/.local/lib/python3.10/site-packages/flask/app.py:1744]
 Traceback (most recent call last):
   File "/home/yagopeixinho/.local/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
     response = self.full_dispatch_request()
